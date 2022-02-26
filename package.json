@@ -1,0 +1,25 @@
+{
+  "name": "11-express-iannicholas-homework",
+  "version": "1.0.0",
+  "description": "Note Taker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iannicholas/11-Express-IanNicholas-Homework.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iannicholas/11-Express-IanNicholas-Homework/issues"
+  },
+  "homepage": "https://github.com/iannicholas/11-Express-IanNicholas-Homework#readme",
+  "dependencies": {
+    "expres": "^0.0.5",
+    "express": "^4.17.3",
+    "jest": "^27.5.1"
+  }
+}
