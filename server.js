@@ -38,15 +38,15 @@ app.post('/api/notes', (req, res) => {
     res.json(notes);
 });
 
-// route to index.html 
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, "./public/index.html"));
-}); 
-
 // rouet to notes.html
 app.get('/notes', (req, res) => {
-    res.sendFile(path.join(__dirname, "./public/notes.html"));
+    res.sendFile(path.join(__dirname, "./Develop/public/notes.html"));
 });
+
+// route to index.html 
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, "./Develop/public/index.html"));
+}); 
 
 // listening on
 app.listen(PORT, () => {
