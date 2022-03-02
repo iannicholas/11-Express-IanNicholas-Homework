@@ -28,7 +28,7 @@ function createNewNote (body, notesArray) {
 
 // rouet to notes.html
 app.get('/notes', (req, res) => {
-    res.sendFile(path.join(__dirname, "./public/notes.html"));
+    res.sendFile(path.join(__dirname, "notes.html"));
 });
 
 // route to index.html 
