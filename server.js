@@ -33,7 +33,7 @@ app.get('/notes', (req, res) => {
 
 // route to index.html 
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, "./public/index.html"));
+    res.sendFile(path.join(__dirname, "./Develop/public/index.html"));
 });
 
 // get route 
