@@ -34,19 +34,19 @@ app.get("/api/notes", (req, res) => {
 
 // post route
 app.post('/api/notes', (req, res) => {
-    const note = createNewNote(req.body, notes); 
+    const note = createNewNote(req.body, notes);
     res.json(notes);
-});
-
-// rouet to notes.html
-app.get('/notes', (req, res) => {
-    res.sendFile(path.join(__dirname, "./Develop/public/notes.html"));
 });
 
 // route to index.html 
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, "./Develop/public/index.html"));
 }); 
+
+// rouet to notes.html
+app.get('/notes', (req, res) => {
+    res.sendFile(path.join(__dirname, "./Develop/public/notes.html"));
+});
 
 // listening on
 app.listen(PORT, () => {
